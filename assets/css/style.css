@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'miller';
+    src: url('../Miller-TitilliumWeb/Miller-Display.ttf'); /* IE9 Compat Modes */
+}
+@font-face {
+    font-family: 'titillium';
+    src: url('../Miller-TitilliumWeb/TitilliumWeb-SemiBold.ttf'); /* IE9 Compat Modes */
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.home{
+    background: linear-gradient(200deg, #0000, #000000bf), url(../images/pexels-pixabay-267507.jpg);    
+    background-size: cover;
+    background-position: bottom;
+    height: 100vh;
+    width: 100%;
+    padding: 5vh 0;
+}
+.identity-row{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+.habl-text-img{
+    width: 40%;
+}
+.habl-frame{
+    width: 15%;
+}
+.intro-row{
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro-slogan{
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-family: miller;
+}
+.nav-link{
+    text-transform: uppercase;
+    color: white !important;
+    font-family: titillium;
+}
