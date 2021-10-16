@@ -12,7 +12,7 @@
     box-sizing: border-box;
 }
 .home{
-    background: linear-gradient(200deg, #0000, #000000bf), url(../images/pexels-pixabay-267507.jpg);    
+    background: linear-gradient(200deg, #0000, #000000), url(../images/pexels-pixabay-267507.jpg);    
     background-size: cover;
     background-position: bottom;
     height: 100vh;
@@ -20,7 +20,7 @@
     padding: 5vh 0;
 }
 .identity-row{
-    height: 10vh;
+    height: 15vh;
     display: flex;
     align-items: center;
 }
@@ -31,10 +31,13 @@
     width: 15%;
 }
 .intro-row{
-    height: 65vh;
+    height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.navLinks{
+    height: 15vh;
 }
 .intro-slogan{
     text-align: center;
@@ -42,8 +45,45 @@
     color: white;
     font-family: miller;
 }
-.nav-link{
+.nav-link, .services-links{
     text-transform: uppercase;
     color: white !important;
     font-family: titillium;
+    white-space: nowrap;
+    text-decoration: none;
+    transition: color 1s;
+}
+.services-links-uh{
+    /* display: none !important; */
+    opacity: 0;
+}
+.services-links-h{
+    /* display: block !important; */
+    opacity: 1;
+}
+.services-links-heading{
+    color: #ea7822 !important;
+}
+
+.nav-link:hover, .services-links:hover{
+    color: #ea7822 !important;
+}
+@media screen and (max-width: 768px){
+    .habl-text-img{
+        width: 70%;
+    }
+    .habl-frame{
+        width: 30%;
+    }
+}
+@media screen and (max-width: 500px){
+    .nav-link, .services-links{
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 769px){
+    .home{
+        display: flex;
+        align-items: center;
+    }
 }
