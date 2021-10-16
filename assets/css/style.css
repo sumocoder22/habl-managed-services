@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 @font-face {
     font-family: 'miller';
     src: url('../Miller-TitilliumWeb/Miller-Display.ttf'); /* IE9 Compat Modes */
@@ -5,11 +10,6 @@
 @font-face {
     font-family: 'titillium';
     src: url('../Miller-TitilliumWeb/TitilliumWeb-SemiBold.ttf'); /* IE9 Compat Modes */
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 .home{
     background: linear-gradient(200deg, #0000, #000000), url(../images/pexels-pixabay-267507.jpg);    
@@ -64,7 +64,6 @@
 .services-links-heading{
     color: #ea7822 !important;
 }
-
 .nav-link:hover, .services-links:hover{
     color: #ea7822 !important;
 }
@@ -85,5 +84,33 @@
     .home{
         display: flex;
         align-items: center;
+    }
+}
+#preloader {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: 9999;
+    transition: all 1s ease-out;
+}
+.blu-logo {
+    width: 150px;
+    height: 150px;
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(../images/habl\ logo\ bg\ removed\ orange\ frame.png);
+    animation: fade 1.5s ease-in-out .5s infinite alternate;
+}
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
