@@ -85,6 +85,12 @@
         display: flex;
         align-items: center;
     }
+    .location-map{
+        height: 39vh;
+    }
+    .contact-info-form{
+        height: 45vh;
+    }
 }
 #preloader {
     position: absolute;
@@ -113,4 +119,45 @@
     to {
         opacity: 1;
     }
+}
+.contact{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(238, 238, 238);
+    padding-top: 15vh;
+}
+.contact-address p:first-child, .contact-number p:first-child{
+    color: rgb(243, 165, 113);
+    font-family: titillium;
+}
+.contact-address p:first-child, .contact-number p:first-child{
+    margin-bottom: 0;
+}
+.contact-address p:last-child, .contact-number p:last-child{
+    color: rgb(175, 170, 170);
+}
+.contact-number input{
+    border: none;
+}
+.contact-number input:focus{
+    outline: none;
+}
+.contact h3{
+    color: rgb(243, 165, 113);
+    font-size: 40px;
+    margin-bottom: 5%;
+    font-family: miller;
+}
+.form-control{
+    background-color: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    border-bottom: 1px solid rgb(243, 165, 113) !important;
+}
+.form-control:focus{
+    box-shadow: none !important;
+}
+.form-container{
+    background-color: rgba(255, 192, 203, 0.164);
+    padding: 3%;
 }
