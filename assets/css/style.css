@@ -74,6 +74,12 @@
     .habl-frame{
         width: 30%;
     }
+    .services-container h4{
+        font-size: 25px !important;
+    }
+    .services-container p{
+        font-size: 16px !important;
+    }
 }
 @media screen and (max-width: 500px){
     .nav-link, .services-links{
@@ -160,4 +166,37 @@
 .form-container{
     background-color: rgba(255, 192, 203, 0.164);
     padding: 3%;
+}
+.services-section{
+    background: linear-gradient(200deg, #0000, #000000), url(../images/pexels-tima-miroshnichenko-322323232254538372.png);    
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+    width: 100%;
+    padding: 15vh 0;
+}
+.services-section h3{
+    font-size: 40px;
+    font-family: miller;
+    color: white;
+    margin-bottom: 15%;
+}
+.services-container{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    padding: 20px;
+}
+.services-container h4{
+    color: #ea7822;
+    font-family: miller;
+    font-size: 30px;
+}
+.services-container p{
+    color: white;
+    font-family: titillium;
+    font-size: 18px;
+}
+.services-container > .row:nth-child(2){
+    margin-top: 100px;
 }
